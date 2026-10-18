@@ -6,7 +6,7 @@ O sistema foi dimensionado tomando como referência a cultura agrícola sustent�
 
 ---
 ### Esquema do Circuito no Wokwi
-![Esquema do Circuito ESP32](./assets/Pasted 2026-10-17 at 9.51.34 PM.tiff)
+![Esquema do Circuito ESP32](./assets/circuito.png)
 
 ## 📋 Sumário
 - [1. Visão Geral do Projeto](#1-visão-geral-do-projeto)
