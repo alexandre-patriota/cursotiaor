@@ -5,6 +5,8 @@ Este projeto consiste em um sistema automatizado e inteligente de monitoramento 
 O sistema foi dimensionado tomando como referência a cultura agrícola sustentável da **Alface Crespa** (*Lactuca sativa*), aplicando conceitos de IoT e agricultura de precisão para otimizar o uso da água e garantir a produtividade do solo.
 
 ---
+### Esquema do Circuito no Wokwi
+![Esquema do Circuito ESP32](./assets/Pasted 2026-10-17 at 9.51.34 PM.tiff)
 
 ## 📋 Sumário
 - [1. Visão Geral do Projeto](#1-visão-geral-do-projeto)
@@ -45,10 +47,14 @@ A **Alface Crespa** foi selecionada por possuir um ciclo curto e alta sensibilid
 
 Como plataformas de simulação como o Wokwi não possuem sensores puramente químicos/agrícolas, foram feitas adaptações didáticas:
 
-* **Sensor de Umidade do Solo $ightarrow$ Sensor DHT22**: Utiliza-se o parâmetro de umidade do ar do DHT22 para simular a umidade do solo em tempo real.
-* **Sensor de pH do Solo $ightarrow$ Módulo LDR (Photoresistor)**: A leitura analógica de intensidade de luz (0 a 4095) é mapeada para uma escala de pH proporcional de **0.0 a 14.0**.
-* **Níveis de Nutrientes NPK $ightarrow$ Botões Verdes (Push Buttons) / Chaves**: Três entradas digitais representam os macronutrientes **Nitrogênio (N)**, **Fósforo (P)** e **Potássio (K)** operando em lógica binária (`True` / `False`).
-* **Bomba D'água $ightarrow$ Módulo Relé Azul**: Aciona a carga de irrigação quando todas as condições são atendidas.
+* **Sensor de Umidade do Solo $
+ightarrow$ Sensor DHT22**: Utiliza-se o parâmetro de umidade do ar do DHT22 para simular a umidade do solo em tempo real.
+* **Sensor de pH do Solo $
+ightarrow$ Módulo LDR (Photoresistor)**: A leitura analógica de intensidade de luz (0 a 4095) é mapeada para uma escala de pH proporcional de **0.0 a 14.0**.
+* **Níveis de Nutrientes NPK $
+ightarrow$ Botões Verdes (Push Buttons) / Chaves**: Três entradas digitais representam os macronutrientes **Nitrogênio (N)**, **Fósforo (P)** e **Potássio (K)** operando em lógica binária (`True` / `False`).
+* **Bomba D'água $
+ightarrow$ Módulo Relé Azul**: Aciona a carga de irrigação quando todas as condições são atendidas.
 
 ---
 
