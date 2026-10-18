@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "talhao": "Talhao-A",
+        "metodo": "Mecânica",
+        "toneladas": 600.0,
+        "perda_perc": 14.0,
+        "prejuizo_rs": 12600.0
+    },
+    {
+        "id": 2,
+        "talhao": "Talhao-B",
+        "metodo": "Manual",
+        "toneladas": 350.0,
+        "perda_perc": 3.5,
+        "prejuizo_rs": 1837.5
+    }
+]
