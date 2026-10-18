@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 48, "left": -302.36, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -47.7,
+      "left": -591,
+      "attrs": { "humidity": "43.5", "temperature": "50.4" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -140.8,
+      "left": -498.4,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 83,
+      "left": -57.6,
+      "attrs": { "color": "red", "xray": "1", "bounce": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 131,
+      "left": -9.6,
+      "attrs": { "color": "green", "xray": "1", "bounce": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 179,
+      "left": 38.4,
+      "attrs": { "color": "blue", "xray": "1", "bounce": "1" }
+    },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 259.4, "left": -172.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "v-9.6", "h220.8" ] ],
+    [ "dht1:SDA", "esp:4", "green", [ "v134.4", "h268.9" ] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "h0" ] ],
+    [ "ldr1:GND", "esp:GND.2", "black", [ "h0" ] ],
+    [ "ldr1:AO", "esp:34", "green", [ "h9.6", "v239.3" ] ],
+    [ "btn1:1.l", "esp:23", "green", [ "h0" ] ],
+    [ "btn2:1.l", "esp:22", "green", [ "h0" ] ],
+    [ "btn3:1.l", "esp:21", "green", [ "h0" ] ],
+    [ "relay1:VCC", "esp:5V", "red", [ "h0" ] ],
+    [ "relay1:GND", "esp:GND.1", "black", [ "h0" ] ],
+    [ "relay1:IN", "esp:5", "green", [ "h0" ] ],
+    [ "btn1:2.l", "esp:GND.2", "black", [ "h0" ] ],
+    [ "btn2:2.l", "esp:GND.2", "black", [ "h0" ] ],
+    [ "btn3:2.l", "esp:GND.2", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
